@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MauriPlayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="settings">
+            <input type="text" id="m3u-url" placeholder="Pega la URL de tu lista .m3u aquí">
+            <button id="save-button" title="Cargar Lista">&#x21BB;</button>
+            <select id="history-dropdown"></select>
+            <button id="clear-history-button" title="Limpiar Historial">&#x1F5D1;</button>
+        </div>
+        <div class="channel-list-header">
+            <span>Canales</span>
+            <div class="toggle-switch">
+                <input type="checkbox" id="show-favorites-toggle" class="toggle-switch-checkbox">
+                <label class="toggle-switch-label" for="show-favorites-toggle">
+                    <span class="toggle-switch-inner"></span>
+                    <span class="toggle-switch-switch"></span>
+                </label>
+            </div>
+            <label for="show-favorites-toggle" class="toggle-label">Solo Favs ★</label>
+        </div>
+        <div class="search-container">
+            <input type="search" id="search-box" placeholder="Buscar canal...">
+        </div>
+        <div class="main-content">
+            <div class="channel-list-container">
+                <ul id="channel-list">
+                    <!-- Los canales se cargarán aquí -->
+                </ul>
+            </div>
+            <div class="video-container">
+                <video id="video-player" controls autoplay></video>
+                <div id="player-placeholder">
+                    <h2>MauriPlayer</h2>
+                    <p>Carga una lista y selecciona un canal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="hls.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
