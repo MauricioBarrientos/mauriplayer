@@ -1,6 +1,6 @@
 # mauriplayer
 Una extensión simple para ver listas de IPTV (M3U).
-
+Lista de referencia : https://m3u.cl/lista/CL.m3u
 ## Instrucciones para instalar y usar en navegadores basados en Chromium
 
 1. **Descarga o clona este repositorio en tu computadora.**
